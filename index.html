@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#8B0000">
+        <meta name="description" content="Portfolio de Jennifer Guzman, Tester Manual">
+        <link rel="icon" href="images/icono-page.webp" type="image/webp">
+        <!-- Añade este enlace en la sección <head> de tu HTML para incluir Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <title>Portfolio de Jennifer Guzman</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <style>
+            #particles-js {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                position: relative;
+                overflow-x: hidden;
+            }
+            .logo, .logo-JavaScript, .logo-css3, .logo-sql {
+                border-radius: 50%;
+            }
+        </style>
+</head>
+<body> 
+    <div class="interactive-message">
+        🌟 ¡Explora el fondo! Mueve el cursor o toca la pantalla 🌟
+    </div>    
+    <div id="particles-js"></div>
+    <div class="floating-buttons">
+        <a href="https://www.linkedin.com/in/jenniferguzman10/" target="_blank" class="linkedin-button" aria-label="Ir al LinkedIn de Jennifer Guzmán">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:jenniferguzman1994@gmail.com" class="email-button" aria-label="Ir al correo electrònico de Jennifer Guzmán">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/59897830193?text=Hola%20Jennifer%20Guzman" target="_blank" class="whatsapp-button" aria-label="Ir al whatsapp de Jennifer Guzmán">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+      
+    
+
+    <header>
+        <h1 class="titulo">Portfolio de Jennifer Guzman</h1>
+        <img id="foto-jenni" src="images/img-Jenni.jpg" title="Foto de Jennifer Guzmán" alt="Foto profesional de Jennifer Guzmán" width="200" height="200">
+    </header>
+
+    <nav class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a target="_blank" rel="noreferrer" href="https://github.com/JenniGuzman">GitHub</a>
+    </nav>
+
+    <main>
+        <section id="inicio" class="section-inicio">
+            <h2>Inicio</h2>
+            <p>Aquí puedes encontrar una muestra de mis trabajos más recientes, mis habilidades y experiencia en desarrollo web. Estoy apasionada por crear sitios web funcionales y estéticamente agradables. ¡Explora y conoce más sobre mi trabajo!</p>
+        </section>
+
+        <section id="sobre-mi" class="section-sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>¡Hola! Soy Jennifer Guzmán, una apasionada del mundo tecnológico y del desarrollo web. Soy egresada en testing manual y estoy dando mis primeros pasos para convertirme en full stack developer. Me encanta analizar sistemas, resolver problemas y asegurar la calidad en cada proyecto en el que trabajo. Tengo experiencia creando casos de prueba y realizando pruebas de confirmación y retesting, además de manejar herramientas como SQL Server Management, Canva y lenguajes como JavaScript y HTML5. Fuera del mundo de la tecnología, soy una persona curiosa, motivada y siempre en busca de nuevos aprendizajes. También cuento con un nivel intermedio de inglés, lo que me permite comunicarme y trabajar en entornos bilingües. Si estás buscando a alguien con entusiasmo, dedicación y muchas ganas de aprender, ¡estás en el lugar correcto! Navega por mi portafolio y descubre algunos de los proyectos en los que he trabajado. 😊</p>
+            <p>Puedes ver mi certificación <a href="documentos/Certificado Tester.png" target="_blank">aquí</a>.</p>
+        </section>
+
+        <section id="habilidades" class="section-habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li><img src="images/logo_qa.png" title="QA Tester Logo" alt="Testing logo" class="logo"> Testing Manual</li>
+                <li><img src="images/JavaScript-Logo.png" title="JavaScript Logo" alt="JavaScript Logo" class="logo-JavaScript"> JavaScript</li>
+                <li><img src="images/html_logo.png" title="HTML5 Logo" alt="HTML5 logo" class="logo"> HTML5</li>
+                <li><img src="images/CSS-Logo.png" title="CSS3 logo" alt="CSS3 Logo" class="logo-css3"> CSS3</li>
+                <li><img src="images/logo_sql.png" title="SQL Server Management Logo" alt="logo-sql" class="logo-sql"> SQL Server Manager</li>
+                <li><img src="images/Canva-Logo-PNG.png" title="Canva logo" alt="Canva Logo" class="logo"> Canva</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Mi Portfolio</p>
+    </footer>
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: '#ffffff'
+                },
+                shape: {
+                    type: 'circle',
+                    stroke: {
+                        width: 0,
+                        color: '#000000'
+                    },
+                    polygon: {
+                        nb_sides: 5
+                    }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: {
+                        enable: false,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#ffffff',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2, <!-- Reduced speed from 6 to 2 -->
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'repulse'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 400,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+</html>
